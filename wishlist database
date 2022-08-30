@@ -1,0 +1,24 @@
+--create wishlist
+CREATE TABLE products (id INTEGER PRIMARY KEY, item TEXT, price_USD REAL, brand TEXT, Color TEXT, quantity INTEGER);
+INSERT INTO products VALUES (1, "iphone", 500, "apple", "silver", 43);
+INSERT INTO products VALUES (2, "shorts", 50, "lululemon", "black", 34);
+INSERT INTO products VALUES (3, "makeup", 10, "mac", "red", 24);
+INSERT INTO PRODUCTS VALUES (4, "sunglasses", 45, "rayban", "gold", 3);
+insert into products values (5, "notebook", 10, "moleskin", "black", 80);
+INSERT INTO products values (6, "top", 23, "lululemon", "white", 34);
+insert into products values (7, "laptop", 1000, "apple", "silver", 12);
+insert into products values (8, "earphones", 140, "apple", "white", 20);
+insert into products values (9, "jacket", 200, "alo_yoga", "black", 10);
+insert into products values (10, "printer", 120, "apple", "white", 33);
+insert into products values (11, "effortless_pants", 130, "aritzia","black", 10);
+insert into products values (12, "990_shoes", 100, "new_balance", "grey", 33);
+insert into products values (13, "560_shoes", 100, "new_balance", "navy", 78);
+insert into products values (14, "ipad", 1200, "apple", "silver", 12);
+insert into products values (15, "airtag", 30, "apple", "silver", 100);
+
+--display database 
+SELECT * FROM products;
+--display database ordered by price
+Select * from products order by price_usd asc;
+select item, price_usd from products;
+select brand, sum(quantity) from products
